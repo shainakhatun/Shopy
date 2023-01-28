@@ -1,5 +1,6 @@
 package com.example.shopy
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -7,19 +8,16 @@ import androidx.appcompat.app.AppCompatActivity
 
 class JoinActivity : AppCompatActivity() {
     lateinit var join: Button
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_join)
 
 
-        var login = findViewById<Button>(R.id.main_login_btn)
-        join = findViewById(R.id.main_join_btn)
+        var login = findViewById<Button>(R.id.loginBtn)
 
-        join.setOnClickListener() {
-            startActivity(Intent(this, RegisterOrSigninActivity::class.java))
-        }
         login.setOnClickListener() {
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         }
     }
 }
