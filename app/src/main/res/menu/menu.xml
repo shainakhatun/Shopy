@@ -6,13 +6,13 @@
         android:title="Home"
         android:icon="@drawable/ic_baseline_home_24"/>
 
-    <item android:id="@+id/person"
-        android:title="Person"
-        android:icon="@drawable/ic_baseline_person_24"/>
-
     <item android:id="@+id/addToCard"
         android:title="Add To Card"
         android:icon="@drawable/ic_baseline_shopping_cart_24"/>
+
+    <item android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_24"/>
 
     <item android:id="@+id/menu"
         android:title="Menu"
