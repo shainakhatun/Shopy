@@ -3,7 +3,6 @@ package com.example.shopy
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.RecyclerView
 import com.example.shopy.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -15,14 +14,14 @@ class MainActivity : AppCompatActivity() {
         viewBinding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
 
-        replaceFragment(HomeFragment())
+        replaceFragment()
 
         viewBinding.bottomBar.setOnItemSelectedListener {
             when(it.itemId){
-                R.id.home -> replaceFragment(HomeFragment())
-                R.id.person -> replaceFragment(PersonFragment())
-                R.id.addToCard -> replaceFragment(AddToCardFragment())
-                R.id.menu -> replaceFragment(MenuFragment())
+                R.id.home -> replaceFragment()
+                R.id.addToCard -> replaceFragment()
+                R.id.profile -> replaceFragment()
+                R.id.menu -> replaceFragment()
                 else -> {
 
                 }
@@ -30,10 +29,10 @@ class MainActivity : AppCompatActivity() {
             true
         }
     }
-    private fun replaceFragment(fragment: Fragment) {
+    private fun replaceFragment() {
         val fragmentManager=supportFragmentManager
         val fragmentTransaction=fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.frame,fragment)
+        fragmentTransaction.replace(R.id.frame, Fragment())
         fragmentTransaction.commit()
     }
 
