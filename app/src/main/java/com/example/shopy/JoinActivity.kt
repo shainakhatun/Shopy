@@ -12,14 +12,13 @@ class JoinActivity : AppCompatActivity() {
         setContentView(R.layout.activity_join)
 
 
-        var login = findViewById<Button>(R.id.main_login_btn)
-        join = findViewById(R.id.main_join_btn)
+        var login = findViewById<Button>(R.id.loginBtn)
 
         join.setOnClickListener() {
             startActivity(Intent(this, RegistrationActivity::class.java))
         }
         login.setOnClickListener() {
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         }
     }
 }

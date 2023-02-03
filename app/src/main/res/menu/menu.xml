@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+
     <item android:id="@+id/home"
-        android:title="@string/home"
+        android:title="Home"
         android:icon="@drawable/ic_baseline_home_24"/>
 
-    <item android:id="@+id/search"
-        android:title="@string/person"
+    <item android:id="@+id/person"
+        android:title="Person"
         android:icon="@drawable/ic_baseline_person_24"/>
 
-    <item android:id="@+id/play"
-        android:title="@string/add_to_card"
-        android:icon="@drawable/ic_baseline_shopping_cart_24"
-        />
+    <item android:id="@+id/addToCard"
+        android:title="Add To Card"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"/>
 
-    <item android:id="@+id/likes"
-        android:title="@string/menu"
+    <item android:id="@+id/menu"
+        android:title="Menu"
         android:icon="@drawable/ic_baseline_menu_24"/>
 
 </menu>
