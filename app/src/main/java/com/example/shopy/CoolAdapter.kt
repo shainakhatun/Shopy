@@ -2,6 +2,7 @@ package com.example.shopy
 
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,7 +23,6 @@ class CoolAdapter(private val userList: ArrayList<CoolDataClass>) : RecyclerView
         val img=itemView.findViewById<ImageView>(R.id.imageView)
         val name=itemView.findViewById<TextView>(R.id.textView)
         val id=itemView.findViewById<TextView>(R.id.textView3)
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -37,6 +37,14 @@ class CoolAdapter(private val userList: ArrayList<CoolDataClass>) : RecyclerView
         Glide.with(context).load(user.strDrinkThumb).into(holder.img)
         holder.name.text=user.strDrink+user.idDrink
         holder.id.text=user.idDrink
+
+        holder.img?.setOnClickListener(){
+            val intent=Intent(context,MainActivity2::class.java)
+            intent.putExtra("image",user.strDrinkThumb)
+            intent.putExtra("name",user.idDrink)
+            intent.putExtra("id",user.strDrink)
+            context.startActivity(intent)
+        }
 
 //        holder.itemView.setOnClickListener(){
 //            onItemClick?.invoke(user)
