@@ -257,23 +257,39 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
                 <Button
                     android:id="@+id/faq_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="See the Faq."
                     android:textSize="18dp"
+                    android:background="@color/teal_700"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
                     android:fontFamily="serif"
                     android:layout_gravity="end|bottom"/>
+
                 <Button
                     android:fontFamily="serif"
                     android:id="@+id/orderSus_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="order"
+                    android:background="@color/teal_700"
                     android:textSize="18dp"
+                    android:layout_marginLeft="40dp"
                     android:layout_gravity="end|bottom"/>
             </LinearLayout>
+            <TextView
+                android:id="@+id/txtJK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

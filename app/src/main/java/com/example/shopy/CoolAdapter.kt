@@ -16,6 +16,8 @@ class CoolAdapter(private val userList: ArrayList<CoolDataClass>) : RecyclerView
 
 //    var onItemClick:((User) ->Unit)?=null
 
+
+
     class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         val img=itemView.findViewById<ImageView>(R.id.imageView)
         val name=itemView.findViewById<TextView>(R.id.textView)

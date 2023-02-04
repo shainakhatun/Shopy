@@ -43,6 +43,8 @@ class MoreFragment : Fragment() {
             var intent=Intent(requireContext(),OrderSuccessActivity::class.java)
             startActivity(intent)
         }
+
+//        val datas
         return k
     }
 
