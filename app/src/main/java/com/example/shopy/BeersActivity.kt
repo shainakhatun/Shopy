@@ -60,7 +60,7 @@ class BeersActivity : AppCompatActivity() {
                 Log.d("Volley sample", userList.toString())
             }
             recycler?.layoutManager = LinearLayoutManager(this)
-            recycler?.adapter = UserAdapter(userList,)
+            recycler?.adapter = UserAdapter(userList)
 
         }, { err ->
             Log.d("Fail", err.message.toString())
