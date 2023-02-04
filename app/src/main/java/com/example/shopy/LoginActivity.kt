@@ -12,7 +12,6 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import androidx.core.content.ContextCompat
 
 @SuppressLint("checkResult")
@@ -50,15 +49,14 @@ class LoginActivity : AppCompatActivity() {
         }
         signInBtn.setOnClickListener {
             checkInput()
-            var Email = emailEt.getText().toString()
-            val Password = passEt.getText().toString()
-            if (Email.equals(saveEmail) && Password.equals(savePassword)) {
-                startActivity(Intent(this, MainActivity::class.java))
-                saveData.edit().putString("Email", Email).apply()
-                saveData.edit().putString("Password", Password).apply()
-            } else {
-                Toast.makeText(this, "Please sign in", Toast.LENGTH_SHORT).show()
-            }
+//            var Email = emailEt.getText().toString()
+//            val Password = passEt.getText().toString()
+//            if (Email.equals(saveEmail) && Password.equals(savePassword)) {
+            startActivity(Intent(this, MainActivity::class.java))
+//                saveData.edit().putString("Email", Email).apply()
+//                saveData.edit().putString("Password", Password).apply()
+//            } else {
+//                Toast.makeText(this, "Please sign in", Toast.LENGTH_SHORT).show()
         }
     }
     private fun textAutoCheck() {
