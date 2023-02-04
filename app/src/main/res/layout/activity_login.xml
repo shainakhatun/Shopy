@@ -19,7 +19,7 @@
         android:id="@+id/Logo_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="e-commerce"
+        android:text="Shopy"
         android:textStyle="bold"
         android:fontFamily="cursive"
         android:textColor="#000000"
@@ -30,6 +30,18 @@
         app:layout_constraintStart_toStartOf="parent"
         />
 
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView2"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="20dp"-->
+    <!--            android:layout_marginTop="100dp"-->
+    <!--            android:text="Login"-->
+    <!--            android:textSize="30sp"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+    <!--    android:fontFamily="@font/metropolis_bold"-->
+    <!--    android:textColor="@color/mainText"-->
 
 
     <LinearLayout

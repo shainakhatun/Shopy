@@ -17,8 +17,9 @@ class SplashActivity : AppCompatActivity() {
         image=findViewById(R.id.img)
         image.alpha=0f
         image.animate().setDuration(1500).alpha(1f).withEndAction{
-            val i= Intent(this,MainActivity::class.java)
-            startActivity(i)
+//            val i= Intent(this,MainActivity::class.java)
+//            startActivity(i)
+            startActivity(Intent(this, OnBoardibng::class.java))
             overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
         }
 
